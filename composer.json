@@ -1,0 +1,38 @@
+{
+    "name": "beyondcode/nova-rss-card",
+    "description": "A Laravel Nova card.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marcel Pociot",
+            "email": "marcel@beyondco.de",
+            "homepage": "https://beyondco.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "simplepie/simplepie": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Beyondcode\\RssCard\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Beyondcode\\RssCard\\CardServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
